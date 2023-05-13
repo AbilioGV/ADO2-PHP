@@ -9,7 +9,11 @@ function validar($veiculo) {
     global $tipos;
 
     $carro = buscar_veiculo_por_placa($veiculo["placa"]);
-    if ($carro){die ("Já existe um veículo com essa placa");}
+    if ($carro) {
+        if (!isset ($veiculo["chave"]) || $veiculo["chave"] != $carro["chave"]) {
+            die ("Já existe um veículo com essa placa");  
+        }
+    }
 
     return $veiculo["ano"] >= 1900
         && strlen($veiculo["placa"]) == 7
