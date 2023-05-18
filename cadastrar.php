@@ -75,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     }
 
     if ($validacaoOk) {
-        header("Location: listagem.php");
+        header("Location: listar.php");
         $transacaoOk = true;
     }
 } else {
@@ -101,7 +101,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         </script>
     </head>
     <body>
-        <form method="POST" action="cadastro.php" id="formulario">
+        <form method="POST" action="cadastrar.php" id="formulario">
             <?php if (!$validacaoOk) {?>
                 <div>
                     <p>Preencha os campos corretamente!</p>

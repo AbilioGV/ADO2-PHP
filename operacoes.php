@@ -1,6 +1,6 @@
 <?php
 
-include_once "conecta-sqlite.php";
+include_once "conectar.php";
 
 function inserir_veiculo($veiculo) {
     global $pdo;

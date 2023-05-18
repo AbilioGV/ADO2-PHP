@@ -35,13 +35,13 @@ try {
                     <td><?= $linha["tipo"] ?></td>
                     <td>
                         <button type="button">
-                            <a href="cadastro.php?chave=<?= $linha["chave"] ?>">Editar</a>
+                            <a href="cadastrar.php?chave=<?= $linha["chave"] ?>">Editar</a>
                         </button>
                     </td>
                 </tr>
             <?php } ?>
         </table>
-        <button type="button"><a href="cadastro.php">Criar novo</a></button>
+        <button type="button"><a href="cadastrar.php">Criar novo</a></button>
     </body>
 </html>
 
